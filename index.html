@@ -1,16 +1,13 @@
 <!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Le scénariste public</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
 	</head>
 	<body class="is-preload">
 
@@ -19,24 +16,33 @@
 
 				<!-- Header -->
 					<header id="header">
-						<div class="logo">
-							<!-- <span class="icon fa-gem"></span> -->
-						</div>
-
+						<img class="icon" src="images/logo.png" alt="" />
 						<div class="content">
 							<div class="inner">
 								<h1>Scénariste public<br></h1>
 								<p>Vous accompagner, vous aider à avancer dans la finalisation de votre scénario.<br></p>
 							</div>
 						</div>
-						<nav>
-							<ul>
-								<li class="menu" ><a href="#intro">A propos</a></li>
-								<li class="menu" ><a href="#work">Consulting</a></li>
-								<li class="menu" ><a href="#about">Accompagnement</a></li>
-								<li class="menu" ><a href="#contact">Atelier</a></li>
-								<li class="menu" ><a href="#contact">Articles</a></li>
-								<li class="menu" ><a href="#contact">Contact</a></li>
+						<nav class="navi">
+							<ul class="menu_ul">
+								
+							
+								<li class="dropdown menu menu_li">
+									<a class="menu_a" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+									  A propos
+									</a>
+									<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									  <li><a class="dropdown-item" href="#intro">Action</a></li>
+									  <li><a class="dropdown-item" href="#">Another action</a></li>
+									</ul>
+								</li>								
+
+
+								<li class="menu menu_li" ><a class="menu_a" href="#work">Consulting</a></li>
+								<li class="menu menu_li" ><a class="menu_a" href="#about">Accompagnement</a></li>
+								<li class="menu menu_li" ><a class="menu_a" href="#">Atelier</a></li>
+								<li class="menu menu_li" ><a class="menu_a" href="#">Articles</a></li>
+								<li class="menu menu_li" ><a class="menu_a" href="#contact">Contact</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
 						</nav>
@@ -363,6 +369,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
 	</body>
 </html>

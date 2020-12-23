@@ -1,11 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
 
-/*
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -24,10 +19,6 @@ section, summary, time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-}
-
-header{
-
 }
 
 article, aside, details, figcaption, figure,
@@ -617,6 +608,8 @@ input, select, textarea {
 		text-decoration: none;
 		border-bottom: none;
 		position: relative;
+		width: 11.3rem;
+		height: 11.3rem;
 	}
 
 		.icon:before {
@@ -1291,7 +1284,6 @@ input, select, textarea {
 				top: calc(-3.5rem - 1px);
 				left: calc(50% - 1px);
 				width: 1px;
-				/* height: calc(3.5rem + 1px); */
 				background: #ffffff;
 			}
 
@@ -1348,7 +1340,7 @@ input, select, textarea {
 				line-height: 2;
 			}
 
-		#header nav ul {
+		.menu_ul {
 			display: -moz-flex;
 			display: -webkit-flex;
 			display: -ms-flex;
@@ -1360,16 +1352,16 @@ input, select, textarea {
 			border-radius: 4px;
 		}
 
-			#header nav ul li {
+			.menu_li {
 				padding-left: 0;
 				border-left: solid 1px #ffffff;
 			}
 
-				#header nav ul li:first-child {
+				.menu_li:first-child {
 					border-left: 0;
 				}
 
-				#header nav ul li a {
+				.menu_a {
 					display: block;
 					min-width: 7.5rem;
 					height: 2.75rem;
@@ -1381,15 +1373,15 @@ input, select, textarea {
 					border-bottom: 0;
 				}
 
-					#header nav ul li a:hover {
+					.menu_a:hover {
 						background-color: rgba(255, 255, 255, 0.075);
 					}
 
-					#header nav ul li a:active {
+					.menu_a:active {
 						background-color: rgba(255, 255, 255, 0.175);
 					}
 
-		#header nav.use-middle:after {
+		.navi.use-middle:after {
 			content: '';
 			display: block;
 			position: absolute;
@@ -1400,7 +1392,7 @@ input, select, textarea {
 			background: #ffffff;
 		}
 
-		#header nav.use-middle ul li.is-middle {
+		.navi.use-middle ul li.is-middle {
 			border-left: 0;
 		}
 
@@ -1451,7 +1443,7 @@ input, select, textarea {
 				#header > *:before {
 					top: calc(-2rem - 1px);
 					height: calc(2rem + 1px);
-				}
+				} 
 
 			#header .logo {
 				width: 4.75rem;
