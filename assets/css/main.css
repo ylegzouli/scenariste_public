@@ -1354,7 +1354,7 @@ input, select, textarea {
 
 			.menu_li {
 				padding-left: 0;
-				border-left: solid 1px #ffffff;
+				/* border-left: solid 1px #ffffff; */
 			}
 
 				.menu_li:first-child {
@@ -1381,20 +1381,20 @@ input, select, textarea {
 						background-color: rgba(255, 255, 255, 0.175);
 					}
 
-		.navi.use-middle:after {
+		/* .navi.use-middle:after {
 			content: '';
 			display: block;
 			position: absolute;
 			top: 0;
-			/* left: calc(50% - 1px); */
+			left: calc(50% - 1px);
 			width: 1px;
 			height: 100%;
 			background: #ffffff;
-		}
+		} */
 
-		.navi.use-middle ul li.is-middle {
+		/* .navi.use-middle ul li.is-middle {
 			border-left: 0;
-		}
+		} */
 
 		body.is-article-visible #header {
 			-moz-transform: scale(0.95);
