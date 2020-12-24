@@ -21,6 +21,17 @@ section, summary, time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+.type1 {
+	height: 240px;
+}
+
+.test {
+	border: 1px solid white;
+	border-radius: 100%;
+	width: 150px;
+	height: 150px;
+}
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
@@ -608,8 +619,8 @@ input, select, textarea {
 		text-decoration: none;
 		border-bottom: none;
 		position: relative;
-		width: 11.3rem;
-		height: 11.3rem;
+		width: 12.3rem;
+		height: 12.3rem;
 	}
 
 		.icon:before {
@@ -1407,6 +1418,23 @@ input, select, textarea {
 			filter: blur(0.1rem);
 			opacity: 0;
 		}
+
+		.ul_menu {
+			background-color: rgba(255, 255, 255, 0.175);
+			border: 2px solid white;
+		}
+
+		.a_menu {
+			color: white;
+		}
+
+		.li_menu {
+			border-bottom: 2px solid white;
+
+		}
+
+
+
 
 		body.is-preload #header {
 			-moz-filter: blur(0.125rem);
