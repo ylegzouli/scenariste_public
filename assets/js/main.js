@@ -15,6 +15,7 @@ window.addEventListener("load", function() {
   
 	  // Envoi des données du formulaire
 	  XHR.send(FD);
+	  print(XHR.status);
   
 	  // Récupération du status HTTP
 	  XHR.onload = function() {
