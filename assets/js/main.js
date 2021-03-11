@@ -1,8 +1,45 @@
-/*
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+//---------------------------------------------------------
+
+/* javascript.js */
+window.addEventListener("load", function() {
+  
+	function sendData() {
+	  // Nouvelle requête
+	  let XHR = new XMLHttpRequest();
+  
+	  // Liaison FormData et élément formulaire
+	  let FD = new FormData(form);
+  
+	  // Configuration de la requête
+	  XHR.open("POST", "action.php");
+  
+	  // Envoi des données du formulaire
+	  XHR.send(FD);
+  
+	  // Récupération du status HTTP
+	  XHR.onload = function() {
+		if (XHR.status != 200) {
+		  // Erreur
+		  document.getElementById("alertWarning").style.display = "block";
+		} else {
+		  // Succés
+		  document.getElementById("contactForm").reset();
+		  document.getElementById("alertSuccess").style.display = "block"; 
+		}
+	  };
+	}
+  
+	// Définition de l'élément form
+	let form = document.getElementById("contactForm");
+  
+	// Prise en charge de l'événement submit
+	form.addEventListener("submit", function(event) {
+	  event.preventDefault();
+	  sendData();
+	});
+  });
+
+//---------------------------------------------------------
 
 (function($) {
 

@@ -184,7 +184,8 @@
 
 						<!-- Contact -->
 							<article id="contact">
-								<h2 class="major">Contact</h2>
+
+								<!-- <h2 class="major">Contact</h2>
 								<form method="post" action="#">
 									<div class="fields">
 										<div class="field half">
@@ -208,7 +209,39 @@
 								<ul class="icons">
 									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-								</ul>
+								</ul> -->
+<!-- ----------------------------------------------------- -->
+								<form id="contactForm">
+									<input type="text"
+									  id="nom"
+									  name="nom"
+									  placeholder="Nom"
+									  required>
+								  
+									<input type="email"
+									  id="email"
+									  name="email"
+									  placeholder="Email"
+									  required>
+								  
+									<textarea rows="4"
+									  id="message"
+									  name="message"
+									  placeholder="Message"
+									  required></textarea>
+								  
+									<input type="submit" value="Envoyer">
+								  </form>
+								  
+								  <div id="alertSuccess" style="display:none;">
+									Message envoyé.
+								  </div>
+								  
+								  <div id="alertWarning" style="display:none;">
+									Erreur.
+								  </div>
+<!-- ----------------------------------------------------- -->
+
 							</article>
 
 						<!-- Elements -->
