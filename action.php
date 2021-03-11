@@ -2,7 +2,7 @@
 
 // Process uniquement si POST method
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
+  print("test");
   // Nom expéditeur
   $nom = strip_tags(trim($_POST["nom"]));
   
